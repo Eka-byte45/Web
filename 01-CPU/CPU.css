@@ -3,12 +3,17 @@ body
 {
     font-family: 'Roboto Condensed';
     font-size: 20px;
-    padding:1% 5%;
-    /*background-image:url('img/pcb.jpg');*/
-    background-image:url('img/pcb2.jpg');
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    background-size:cover;
+    padding: 1% 5%;
+    background-image: url('img/pcb2.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    backdrop-filter: sepia(100%) hue-rotate(285deg) saturate(100%) brightness(1.9);
+}
+::backdrop
+{
+    filter:invert(50%);
 }
 p
 {
