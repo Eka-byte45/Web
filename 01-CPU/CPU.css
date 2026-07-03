@@ -54,6 +54,10 @@ a:hover
     background-color: black;
     color: white;
 }
+#home a:hover
+{
+    background:none;
+}
 /*h2:target > span
 {
     background-color:limegreen;
