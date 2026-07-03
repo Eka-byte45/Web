@@ -4,6 +4,11 @@ body
     font-family: 'Roboto Condensed';
     font-size: 20px;
     padding:1% 5%;
+    /*background-image:url('img/pcb.jpg');*/
+    background-image:url('img/pcb2.jpg');
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 p
 {
@@ -29,7 +34,6 @@ a
 {
     text-decoration:none;
 }
-
 a:active
 {
     color:green;
@@ -44,4 +48,71 @@ a:hover
     font-weight: 800;
     background-color: black;
     color: white;
+}
+/*h2:target > span
+{
+    background-color:limegreen;
+}*/
+:target
+{
+    background-color: limegreen;
+}
+:target + div
+{
+   /* background-color:#808080;*/
+  /* box-shadow: 0 0 25px 25px lightgray;*/
+  border-radius:15px;
+  background-color:rgba(220,220,220,.5);
+   box-shadow: 0 0 25px 25px rgba(220,220,220,.5);
+}
+div
+{
+    padding:16px;
+}
+div > p
+{
+    /*Стили будут применяться только к тем элементам <p>, которые
+        непосредственно вложены в элемент <div>
+        --------------------------------------
+        <div>
+            <p>здесь стили применятся</p>
+            <article>
+                   <p>А здесь уже НЕ применятся,поскольку нет непосредственного вложения в <diiv> </p>
+            <article>
+        </div>
+        --------------------------------------
+    */
+    
+}
+div p
+{
+    /*стили будут применяться к элементам <p>, 
+    которые вложены в элемент <div> на любой уровень глубины
+         --------------------------------------
+        <div>
+            <p>здесь стили применятся</p>
+            <article>
+                   <p>Здесь стили также применятся,поскольку такое
+                   отношение применяет стили на любом уровне
+                   вложенности (глубине)</p>
+            <article>
+        <p>Здесь стили применятся</p>
+        </div>
+        --------------------------------------
+    */
+}
+div > article > p
+{
+    /*это для предыдущего примера*/
+}
+div + p
+{
+    /*стили будут применяться только к тем элементам <p>,
+        которые непосредственно следуют за элементом
+        <div> на одной глубине
+    */
+}
+div ~ p
+{
+    /*Стили будут применяться ко всем элементам <p>,которые следуют за элементом <div> (на одной глубине???)*/
 }
