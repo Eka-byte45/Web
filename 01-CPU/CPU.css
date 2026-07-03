@@ -4,17 +4,17 @@ body
     font-family: 'Roboto Condensed';
     font-size: 20px;
     padding: 1% 5%;
-    background-image: url('img/pcb2.jpg');
+    /*background-image: url('img/pcb2.jpg');*/
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
-    backdrop-filter: sepia(100%) hue-rotate(285deg) saturate(100%) brightness(1.9);
+    /*margin: 0;
+    backdrop-filter: sepia(100%) hue-rotate(285deg) saturate(100%) brightness(1.9);*/
 }
-::backdrop
+/*::backdrop
 {
     filter:invert(50%);
-}
+}*/
 p
 {
     text-align:justify;
@@ -120,4 +120,22 @@ div + p
 div ~ p
 {
     /*Стили будут применяться ко всем элементам <p>,которые следуют за элементом <div> (на одной глубине???)*/
+}
+.citation
+{
+    /*border: solid 8px;*/
+    border-left:solid 5px blue;
+    /*margin-left:....*/
+    /*padding-top:....*/
+    /*margin: 50px 150px;*/ /*Внешний отсуп*/
+    margin: 50px 100px 200px 300px; /*вверх лево-право низ*/
+    /*margin: all-sides;*/ /*со всех сторон*/
+    /*margin: top-bottom left-right;*/ /*верх-низ,лево-право*/
+    /*margin: top left-right bottom;*/ /*верх,лево-право,низ*/
+    /*margin: top right bottom left;*/ /*верх,право,низ,лево*/
+    padding: 30px; /*Внутренний отступ*/
+    /*margin: all-sides;*/
+    /*padding: top-bottom left-right;*/
+    /*padding: top left-right bottom;*/
+    /*padding: top right bottom left;*/
 }
