@@ -60,7 +60,7 @@ a:hover
 }*/
 :target
 {
-    background-color: limegreen;
+    /*background-color: limegreen;*/
 }
 :target + div
 {
@@ -128,7 +128,7 @@ div ~ p
     /*margin-left:....*/
     /*padding-top:....*/
     /*margin: 50px 150px;*/ /*Внешний отсуп*/
-    margin: 50px 100px 200px 300px; /*вверх лево-право низ*/
+    margin: 50px 100px 200px 300px; /*вверх лево право низ*/
     /*margin: all-sides;*/ /*со всех сторон*/
     /*margin: top-bottom left-right;*/ /*верх-низ,лево-право*/
     /*margin: top left-right bottom;*/ /*верх,лево-право,низ*/
