@@ -1,0 +1,50 @@
+﻿
+table
+{
+    width: 90%;
+    min-width: 650px;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+   /* table-layout:fixed;*/
+   
+}
+caption 
+{
+    caption-side: top;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+td
+{
+    text-align:center;
+    font-size: 15px;
+    border: 1px solid black;
+}
+.col-s
+{
+    background-color:lightpink;
+}
+.col-p
+{
+    background-color:yellow;
+}
+.col-f-1
+{
+    background-color:greenyellow;
+}
+.col-f-2
+{
+    background-color:lawngreen;
+}
+.col-d 
+{
+    background-color:deepskyblue;
+}
+.col-n
+{
+    background-color:none;
+}
