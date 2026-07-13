@@ -10,7 +10,7 @@
 
 .main-window
 {
-    border: solid 1px;
+    /*border: solid 1px;*/
     width: 400px;
     height: 300px;
 }
@@ -127,4 +127,15 @@
     background-image: none;
     background-color: rgb(45,109,249);
     box-shadow: inset -1px -2px 4px 0px #000088, inset 4px 2px 4px 0px #7788FF;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////*/
+.client-rect
+{
+    width:98.5%;
+    height:262px;
+    background-color: rgb(235,233,216);
+    border: solid 3px;
+    border-color: blue;
+    box-shadow: inset 0px 0px 1px 1px darkblue;
+    /*border-image: linear-gradient(to right, darkblue, lightblue,darkblue);*/
 }
