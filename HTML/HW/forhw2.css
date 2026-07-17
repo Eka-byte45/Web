@@ -1,0 +1,43 @@
+﻿table
+{
+    width: 90%;
+    min-width: 650px;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-collapse: separate;
+    border-spacing: 5px;
+    background-color: aqua;
+    
+}
+td
+{
+    height: 20px;
+    width: 60px;
+    border: 1px solid black;
+}
+.color-1
+
+{
+    background-color:yellow;
+}
+.color-2
+{
+    background-color:aqua;
+}
+.color-3
+{
+    background-color:red;
+}
+.color-4
+{
+    background-color:olive;
+}
+.color-5
+{
+    background-color:saddlebrown;
+}
+.color-6
+{
+    background-color:blue;
+}
