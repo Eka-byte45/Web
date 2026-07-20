@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Степень числа</title>
+</head>
+<body>
+    <h2>Возведение числа в степень</h2>
+    <script>
+        function Power(a, n)
+        {
+            if (n >= 0)
+            {
+                let result = 1;
+                for (let i = 0; i < n; i++)
+                {
+                    result *= a;
+                }
+                return result;
+
+            }
+            else
+            {
+                n = -n;
+                let denominator = 1;
+                for (let i = 0; i < n; i++)
+                {
+                    denominator *= a;
+                }
+                return 1 / denominator;
+            }
+        }
+        let a = +prompt("Введите основание степени: ");
+        let n = +prompt("Введите степень числа: ");
+        if (a === 0 && n < 0)
+        {
+            document.write("Делить на ноль нельзя!");
+        }
+        else if (isNaN(a) || isNaN(n))
+        {
+            document.write("Ошибка. Введите корректное число");
+        }
+        else
+        {
+
+            document.write(`Число ${a} в степени ${n} составляет: ${Power(a, n)}`);
+        }
+    </script>
+</body>
+</html>
