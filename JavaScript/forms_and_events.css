@@ -17,7 +17,7 @@ input
 
 .result
 {
-    width: 50%;
+    max-width: 50%;
 }
 .pair
 {
@@ -27,4 +27,9 @@ label
 {
     width:50%;
 
+}
+#factorial-result
+{
+    overflow:scroll;
+   
 }
