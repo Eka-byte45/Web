@@ -30,6 +30,17 @@ label
 }
 #factorial-result
 {
-    overflow:scroll;
-   
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    overflow-y: auto; /* Скролл справа */
+    overflow-x: hidden; /* Запрещает вылезать вбок */
+    white-space: pre-wrap; /* Сохраняет пробелы и переносит длинные слова */
+    word-break: break-all; /* Гарантирует, что даже бесконечное число перенесется, а не уйдет за экран */
+    padding: 8px;
+    margin:8px;
+    box-sizing: border-box;
+    font-family: monospace; /* Для аккуратных цифр столбиком */
+    line-height: 1.4;
+    text-align: left; 
 }

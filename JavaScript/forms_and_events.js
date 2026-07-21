@@ -10,5 +10,6 @@ function Factorial()
         f *= i;
     }
     resultElement.innerHTML = `${number}! = ${f}`;
+    resultElement.scrollTop = resultElement.scrollHeight;
     //resultElement.value = `${number}! = ${f}`;
 }
