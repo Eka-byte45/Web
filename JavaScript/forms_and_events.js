@@ -78,3 +78,13 @@ function switchBackground(e)
     ////switchButton.src = 'sun.png';
     //document.getElementById("debug-background").innerHTML = document.body.className;
 }
+document.getElementById("switch-background-delay").addEventListener("change",setDelay);
+function setDelay(e)
+{
+    let delay = e.target.value;
+        document.getElementById('switch-background').style.transition = 
+        document.body.style.transition =
+        `color ${delay},background-color ${delay}, background-image ${delay}`;
+    console.table(document.body.style);
+    console.table(document.getElementById(`#switch-backgroung`).style);
+}
