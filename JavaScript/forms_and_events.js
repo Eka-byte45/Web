@@ -46,7 +46,9 @@ function setColor(event)
     === - возвращает 'true' только в том случае, если совпадают как значения, так и типы;
     -----------------------------------------------------
     */
+  
     document.body.style[(event.target.id === 'background-color' ? 'backgroundColor' : 'color')] = event.target.value;
+    //document.body.style.transition = transition;
     //event.target.id === 'background-color'
     //    ? document.body.style.backgroundColor = event.target.value
     //    : document.body.style.color = event.target.value;
@@ -70,6 +72,8 @@ function traceMouse(e)
 document.getElementById("switch-background").addEventListener("click", switchBackground);
 function switchBackground(e)
 {
+    document.body.style.backgroundColor = '';
+    document.body.style.color = '';
     document.body.className = document.body.className === "dark" ? "light" : "dark";
     //let skin = document.body.className;
     //let switchButton = document.getElementById("switch-background");
@@ -84,7 +88,27 @@ function setDelay(e)
     let delay = e.target.value;
         document.getElementById('switch-background').style.transition = 
         document.body.style.transition =
-        `color ${delay},background-color ${delay}, background-image ${delay}`;
-    console.table(document.body.style);
-    console.table(document.getElementById(`#switch-backgroung`).style);
+        `color ${delay}s,background-color ${delay}s, background-image ${delay}s`;
+    //console.table(document.body.style);
+    //console.table(document.getElementById(`#switch-backgroung`).style);
 }
+/*//////////////////////////////////////////////////////////////////*/
+function addLeadingZero(number)
+{
+    return number < 10 ? "0" + `${number}` : `${number}`;
+}
+function tickTimer()
+{
+    let date = new Date();
+    document.getElementById("raw-date").innerHTML = date.toString();
+
+    document.getElementById("hours").innerHTML = addLeadingZero(date.getHours());
+    document.getElementById("minutes").innerHTML = addLeadingZero(date.getMinutes());
+    document.getElementById("seconds").innerHTML = addLeadingZero(date.getSeconds());
+
+    document.getElementById("years").innerHTML = addLeadingZero(date.getFullYear());
+    document.getElementById("months").innerHTML = addLeadingZero(date.getMonth()+1);
+    document.getElementById("days").innerHTML = addLeadingZero(date.getDate());
+    setTimeout(tickTimer, 100);
+}
+tickTimer();
