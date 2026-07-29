@@ -53,11 +53,11 @@ body
     padding: 0 8px;
 }
 /*//////////////////////////////////////////////////////////////*/
-input, div, button
+/*input, div, button
 {
     font-size: 15px;
     width:50%;
-}
+}*/
 input
 {
     text-align:right;
@@ -123,10 +123,15 @@ label
     margin:12px;
 }
 /*////////////////////////////////////////////////////////////////////*/
-#clock, #clock div
+#clock
 {
     font-family:'Digital-7 Mono';
     width:98%;
     font-size:48px;
    text-align:center;
+}
+#clock-controls
+{
+    font-size:22px;
+    align-self:center;
 }
